@@ -56,74 +56,74 @@ This directory contains .json files with structural information about the proces
     "structure": "_pbee_3G6D",      <- name of the processed structure
     "partner1": str,                <- chain ids that belongs to the receptor or ligand (p1)
     "partner2": str,                <- chain ids that belongs to the receptor or ligand (p2)
-    "atoms":    int,                <- number of atoms in the processed structure 
-    "ions":     int,                <- number of ions detected in the processed structure
+    "atoms":    "int",                <- number of atoms in the processed structure 
+    "ions":     "int",                <- number of ions detected in the processed structure
     "int_ss_p1": {                  <- secondary structure content of the interface of p1 that interacts with p2
-      "helix": int,                 <- alpha-helix percentage
-      "sheet": int,                 <- beta-sheet percentage
+      "helix": "int",                 <- alpha-helix percentage
+      "sheet": "int",                 <- beta-sheet percentage
       "loop":  int                  <- loop percentage
     },
     "int_ss_p2": {                  <- secondary structure content of the interface of p2 that interacts with p1
-      "helix": int,                 <- same as int_ss_p1
-      "sheet": int,
+      "helix": "int",                 <- same as int_ss_p1
+      "sheet": "int",
       "loop":  int
     },
     "int_restp_p1": {               <- residue type content of the interface of p1 that interacts with p2
-      "aromatic":  int,             <- percentage of aromatic residues
-      "neutral":   int,             <- percentage of neutral residues
-      "apolar":    int,             <- percentage of apolar residues
-      "polar_pos": int,             <- percentage of polar positive residues
+      "aromatic":  "int",             <- percentage of aromatic residues
+      "neutral":   "int",             <- percentage of neutral residues
+      "apolar":    "int",             <- percentage of apolar residues
+      "polar_pos": "int",             <- percentage of polar positive residues
       "polar_neg": int              <- percentage of polar negative residues
     },
     "int_restp_p2": {               <- residue type content of the interface of p2 that interacts with p1
-      "aromatic":  int,             <- same as int_restp_p1
-      "neutral":   int,
-      "apolar":    int,
-      "polar_pos": int,
+      "aromatic":  "int",             <- same as int_restp_p1
+      "neutral":   "int",
+      "apolar":    "int",
+      "polar_pos": "int",
       "polar_neg": int
     },
     "int_aa_comp_p1": {             <- amino acid composition (%) of the interface of p1 that interacts with p2
-      "A": int,                     <- total ALA
-      "C": int,                     <- "     CYS
-      "D": int,                     <- "     ASP
-      "E": int,                     <- "     GLU
-      "F": int,                     <- "     PHE
-      "G": int,                     <- "     GLY
-      "H": int,                     <- "     HIS
-      "I": int,                     <- "     ILE
-      "K": int,                     <- "     LYS
-      "L": int,                     <- "     LEU
-      "M": int,                     <- "     MET
-      "N": int,                     <- "     ASN
-      "P": int,                     <- "     PRO
-      "Q": int,                     <- "     GLN
-      "R": int,                     <- "     ARG
-      "S": int,                     <- "     SER
-      "T": int,                     <- "     THR
-      "V": int,                     <- "     VAL
-      "W": int,                     <- "     TRP
+      "A": "int",                     <- total ALA
+      "C": "int",                     <- "     CYS
+      "D": "int",                     <- "     ASP
+      "E": "int",                     <- "     GLU
+      "F": "int",                     <- "     PHE
+      "G": "int",                     <- "     GLY
+      "H": "int",                     <- "     HIS
+      "I": "int",                     <- "     ILE
+      "K": "int",                     <- "     LYS
+      "L": "int",                     <- "     LEU
+      "M": "int",                     <- "     MET
+      "N": "int",                     <- "     ASN
+      "P": "int",                     <- "     PRO
+      "Q": "int",                     <- "     GLN
+      "R": "int",                     <- "     ARG
+      "S": "int",                     <- "     SER
+      "T": "int",                     <- "     THR
+      "V": "int",                     <- "     VAL
+      "W": "int",                     <- "     TRP
       "Y": int                      <- "     TYR
     },
     "int_aa_comp_p2": {             <- amino acid composition (%) of the interface of p2 that interacts with p1
-      "A": int,
-      "C": int,
-      "D": int,
-      "E": int,
-      "F": int,
-      "G": int,
-      "H": int,
-      "I": int,
-      "K": int,
-      "L": int,
-      "M": int,
-      "N": int,
-      "P": int,
-      "Q": int,
-      "R": int,
-      "S": int,
-      "T": int,
-      "V": int,
-      "W": int,
+      "A": "int",
+      "C": "int",
+      "D": "int",
+      "E": "int",
+      "F": "int",
+      "G": "int",
+      "H": "int",
+      "I": "int",
+      "K": "int",
+      "L": "int",
+      "M": "int",
+      "N": "int",
+      "P": "int",
+      "Q": "int",
+      "R": "int",
+      "S": "int",
+      "T": "int",
+      "V": "int",
+      "W": "int",
       "Y": int
     },
     "int_seq_p1": {},               <- primary structure content (per chain) of the interface of p1 that interacts with p2
@@ -134,8 +134,8 @@ This directory contains .json files with structural information about the proces
       "pre_processing": float,
       "post_processing": null
     },
-    "dG_exp":                 float <- experimental binding affinity of the complex (p1:p2)
-    "rosetta_int_descriptors": {    <- scores and interface descriptors obtained with Rosetta
+    "dG_exp":                 float         <- experimental binding affinity of the complex (p1:p2)
+    "rosetta_int_descriptors": {            <- scores and interface descriptors obtained with Rosetta
       "dslf_fa13":                  float,
       "fa_atr":                     float,
       "fa_dun_dev":                 float,
