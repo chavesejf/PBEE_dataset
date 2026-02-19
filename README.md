@@ -54,7 +54,7 @@ This directory contains .json files with structural information about the proces
 {
   "3G6D": {                         <- name of the raw structure
     "structure": "_pbee_3G6D",      <- name of the processed structure
-    "partner1": str,                <- chain ids that belongs to the receptor or ligand (p1)
+    "partner1": str(),                <- chain ids that belongs to the receptor or ligand (p1)
     "partner2": str,                <- chain ids that belongs to the receptor or ligand (p2)
     "atoms":    int,                <- number of atoms in the processed structure 
     "ions":     int,                <- number of ions detected in the processed structure
