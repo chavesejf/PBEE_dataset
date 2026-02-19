@@ -52,57 +52,57 @@ This directory contains .json files with structural information about the proces
 {
   "3G6D": {                     <- name of the raw structure
     "structure": "_pbee_3G6D",  <- name of the processed structure
-    "partner1": "HL",           <- chain ids that belongs to the receptor or ligand 
-    "partner2": "A",            <- chain ids that belongs to the receptor or ligand
+    "partner1": "HL",           <- chain ids that belongs to the receptor or ligand (p1)
+    "partner2": "A",            <- chain ids that belongs to the receptor or ligand (p2)
     "atoms": 4054,              <- number of atoms in the processed structure 
     "ions": 0,                  <- number of ions detected in the processed structure
-    "int_ss_p1": {              <- secondary structure content of partner1 interface that contacts partner2
-      "helix": 2,               <- alpha helix percentage
-      "sheet": 26,
-      "loop": 39
+    "int_ss_p1": {              <- secondary structure content of the interface of p1 that interacts with p2
+      "helix": 2,               <- alpha-helix percentage
+      "sheet": 26,              <- beta-sheet percentage
+      "loop": 39                <- loop percentage
     },
-    "int_ss_p2": {
+    "int_ss_p2": {              <- same as int_ss_p1
       "helix": 28,
       "sheet": 0,
       "loop": 5
     },
-    "int_restp_p1": {
-      "aromatic": 13,
-      "neutral": 11,
-      "apolar": 15,
-      "polar_pos": 2,
-      "polar_neg": 9
+    "int_restp_p1": {           <- residue type content of the interface of p1 that interacts with p2
+      "aromatic": 13,           <- percentage of aromatic residues
+      "neutral": 11,            <- percentage of neutral residues
+      "apolar": 15,             <- percentage of apolar residues
+      "polar_pos": 2,           <- percentage of polar positive residues
+      "polar_neg": 9            <- percentage of polar negative residues
     },
-    "int_restp_p2": {
+    "int_restp_p2": {           <- same as int_restp_p1
       "aromatic": 2,
       "neutral": 13,
       "apolar": 16,
       "polar_pos": 13,
       "polar_neg": 5
     },
-    "int_aa_comp_p1": {
-      "A": 1,
-      "C": 0,
-      "D": 5,
-      "E": 0,
-      "F": 2,
-      "G": 3,
-      "H": 1,
-      "I": 1,
-      "K": 0,
-      "L": 1,
-      "M": 1,
-      "N": 2,
-      "P": 0,
-      "Q": 1,
-      "R": 0,
-      "S": 1,
-      "T": 2,
-      "V": 1,
-      "W": 2,
-      "Y": 3
+    "int_aa_comp_p1": {         <- amino acid composition of the interface of p1 that interacts with p2
+      "A": 1,                   <- total ALA
+      "C": 0,                   <- "     CYS
+      "D": 5,                   <- "     ASP
+      "E": 0,                   <- "     GLU
+      "F": 2,                   <- "     PHE
+      "G": 3,                   <- "     GLY
+      "H": 1,                   <- "     HIS
+      "I": 1,                   <- "     ILE
+      "K": 0,                   <- "     LYS
+      "L": 1,                   <- "     LEU
+      "M": 1,                   <- "     MET
+      "N": 2,                   <- "     ASN
+      "P": 0,                   <- "     PRO
+      "Q": 1,                   <- "     GLN
+      "R": 0,                   <- "     ARG
+      "S": 1,                   <- "     SER
+      "T": 2,                   <- "     THR
+      "V": 1,                   <- "     VAL
+      "W": 2,                   <- "     TRP
+      "Y": 3                    <- "     TYR
     },
-    "int_aa_comp_p2": {
+    "int_aa_comp_p2": {         <- same as int_aa_comp_p1
       "A": 0,
       "C": 0,
       "D": 0,
