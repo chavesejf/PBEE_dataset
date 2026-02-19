@@ -80,7 +80,7 @@ This directory contains .json files with structural information about the proces
       "neutral":   "int",
       "apolar":    "int",
       "polar_pos": "int",
-      "polar_neg": int
+      "polar_neg": "int"
     },
     "int_aa_comp_p1": {               <- amino acid composition (%) of the interface of p1 that interacts with p2
       "A": "int",                     <- total ALA
