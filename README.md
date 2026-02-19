@@ -1,6 +1,6 @@
 # PBEE dataset
 
-PBEE_datasets/
+PBEE_datasets/\n
 ├── v1.1/
 │   ├── input_structures/
     ├── processed_structures/
