@@ -14,8 +14,6 @@ wget https://github.com/chavesejf/PBEE_datasets/releases/download/v1.1.0/PBEE_v1
 
 ```
 tar -xvJf PBEE_v1.1.0_dataset.tar.xz
-
-python3 ./PBEE_datasets/v1.1.0/_scripts/load_json.py
 ```
 
 ### Step 3:
