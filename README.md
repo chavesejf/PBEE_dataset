@@ -128,8 +128,8 @@ This directory contains .json files with structural information about the proces
     },
     "int_seq_p1": {},                 <- primary structure content (per chain) of the interface of p1 that interacts with p2
     "int_seq_p2": {},                 <- primary structure content (per chain) of the interface of p2 that interacts with p1
-    "int_resid_p1": {},               <- index of interface residues of p1 that interacts with p2
-    "int_resid_p2": {},               <- index of interface residues of p2 that interacts with p1
+    "int_resid_p1": {},               <- index of interface residues of p1 that interacts with p2 (ref: raw structure)
+    "int_resid_p2": {},               <- index of interface residues of p2 that interacts with p1 (ref: raw structure)
     "seq_p1": {},                     <- primary structure content (per chain) of the p1
     "seq_p2": {},                     <- primary structure content (per chain) of the p2
     "time": {                         <- time elapsed to complete the stages of the PBE pipeline
