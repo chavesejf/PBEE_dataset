@@ -36,11 +36,11 @@ PBEE_datasets/
 │       └── train/
 ```
 
-## Data description
+## Data description (v1.1.0)
 
 ### 0_input_structures/
 
-This directory contains the raw structures used in the training and testing stages, all from specific databases (PDBbind, SKEMPI, AffinityBenchmark, and PRODIGY) previously published.
+This directory contains the raw structures used in the training and testing stages of PBEE version 1.1.0 (regressor), all from specific databases (PDBbind, SKEMPI, AffinityBenchmark, and PRODIGY) previously published.
 
 ### 1_processed_structures/
 
