@@ -22,7 +22,7 @@ The following directory tree will be created:
 
 ```bash
 PBEE_datasets/
-├── v1.1/
+├── v1.1.0/
 │   ├── 0_input_structures/
 │   │   ├── test/
 │   │   └── train/
